@@ -10,15 +10,14 @@ import { element } from "./Components/routes/AllRoutes";
 import Loading from "./Components/Loading";
 
 const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement,
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Suspense fallback={<Loading />}>
-      <RouterProvider router={element}></RouterProvider>
-    </Suspense>
+    <RouterProvider router={element}></RouterProvider>
+
     {/* <App /> */}
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

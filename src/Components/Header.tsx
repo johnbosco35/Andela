@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import hero from "./Assets/heropic.jpeg";
 import andela from "./Assets/andela-logo.svg";
@@ -9,84 +9,95 @@ import { NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
-  const [show, setShow] = React.useState<boolean>(false);
+  // const [show, setShow] = React.useState<boolean>(false);
 
-  const changeHeader = () => {
+  // const changeHeader = () => {
+  //   if (window.scrollY >= 70) {
+  //     setShow(true);
+  //   } else {
+  //     setShow(false);
+  //   }
+  // };
+  // window.addEventListener("scroll", changeHeader);
+  const [show, setshow] = useState<boolean>(false);
+
+  const Change = () => {
     if (window.scrollY >= 70) {
-      setShow(true);
+      setshow(true);
     } else {
-      setShow(false);
+      setshow(false);
     }
   };
-  window.addEventListener("scroll", changeHeader);
-
+  window.addEventListener("scroll", Change);
   return (
     <>
       {show ? (
-        <Container bg='white' cc='black'>
+        <Container bg="white" cc="black">
           <Wrapper>
-            <Log to='/'>
+            <Log to="/">
               <Logo src={andela2} />
             </Log>
-            <Navigation cn='black'>
-              <Nav to='expert' cl='black'>
+            <Navigation cn="black">
+              <Nav to="expert" cl="black">
                 For Technology Experts
               </Nav>
-              <Nav to='business' cl='black'>
+              <Nav to="business" cl="black">
                 Business
               </Nav>
-              <Nav to='' cl='black'>
+              <Nav to="/enterprise" cl="black">
                 Enterprise
               </Nav>
-              <Nav to='about' cl='black'>
+              <Nav to="about" cl="black">
                 About Us
               </Nav>
             </Navigation>
             <Btn>
               <Button
-                br='50px'
-                bg=''
-                bd='1px solid black'
-                wide='180px'
-                cc='black'>
+                br="50px"
+                bg=""
+                bd="1px solid black"
+                wide="180px"
+                cc="black"
+              >
                 Apply for Jobs
               </Button>
-              <Button br='50px' bd='' bg='#56C870' wide='150px' cc='black'>
+              <Button br="50px" bd="" bg="#56C870" wide="150px" cc="black">
                 Hire Talent
               </Button>
             </Btn>
           </Wrapper>
         </Container>
       ) : (
-        <Container bg='' cc=''>
+        <Container bg="" cc="">
           <Wrapper>
-            <Log to='/'>
+            <Log to="/">
               <Logo src={andela} />
             </Log>
-            <Navigation cn='white'>
-              <Nav to='expert' cl='white'>
+            <Navigation cn="white">
+              <Nav to="expert" cl="white">
                 For Technology Experts
               </Nav>
-              <Nav to='business' cl='white'>
+              <Nav to="business" cl="white">
                 Business
               </Nav>
-              <Nav to='' cl='white'>
+              <Nav to="/enterprise" cl="white">
                 Enterprise
               </Nav>
-              <Nav to='about' cl='white'>
+              <Nav to="about" cl="white">
                 About Us
               </Nav>
             </Navigation>
             <Btn>
               <Button
-                br='50px'
-                bg=''
-                bd='1px solid white'
-                wide='180px'
-                cc='white'>
+                br="50px"
+                bg=""
+                bd="1px solid white"
+                wide="180px"
+                cc="white"
+              >
                 Apply for Jobs
               </Button>
-              <Button br='50px' bd='' bg='#56C870' wide='150px' cc='black'>
+              <Button br="50px" bd="" bg="#56C870" wide="150px" cc="black">
                 Hire Talent
               </Button>
             </Btn>
@@ -130,7 +141,7 @@ const Container = styled.div<{ bg: string; cc: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   font-size: 19px;
   position: fixed;

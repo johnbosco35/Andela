@@ -4,10 +4,11 @@ import { createBrowserRouter } from "react-router-dom";
 import HomeLayout from "../layout/HomeLayout";
 import { lazy } from "react";
 
-const LandingComp = lazy(() => import("../LandingComp"));
-const AboutComp = lazy(() => import("../AboutComp"));
-const TechnologyExpertsComp = lazy(() => import("../TechnologyExpertsComp"));
-const BusinessComp = lazy(() => import("../BusinessComp"));
+import LandingComp from "../LandingComp";
+import TechnologyExpertsComp from "../TechnologyExpertsComp";
+import BusinessComp from "../BusinessComp";
+import AboutComp from "../AboutComp";
+import Enterprise from "../Enterprise";
 
 export const element = createBrowserRouter([
   {
@@ -18,18 +19,22 @@ export const element = createBrowserRouter([
         index: true,
         element: <LandingComp />,
       },
+      {
+        path: "/expert",
+        element: <TechnologyExpertsComp />,
+      },
+      {
+        path: "/business",
+        element: <BusinessComp />,
+      },
+      {
+        path: "/about",
+        element: <AboutComp />,
+      },
+      {
+        path: "/enterprise",
+        element: <Enterprise />,
+      },
     ],
-  },
-  {
-    path: "/expert",
-    element: <TechnologyExpertsComp />,
-  },
-  {
-    path: "/business",
-    element: <BusinessComp />,
-  },
-  {
-    path: "/about",
-    element: <AboutComp />,
   },
 ]);

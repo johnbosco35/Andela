@@ -22,7 +22,7 @@ import IBM from "./Assets/ibm.png";
 const BrilliantsComp = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    // infinite: true,
     slidesToShow: 4.6,
     slidesToScroll: 1,
     autoplay: true,
@@ -40,139 +40,139 @@ const BrilliantsComp = () => {
       <Wrapper>
         <Slider {...settings}>
           <SliderCard
-            bg='#9ad9fd'
-            name='Rafael'
-            testify='A few months have passed and i absolutely have no regrets. My career fast-forwarded in about five years to what i was expecting.'
+            bg="#9ad9fd"
+            name="Rafael"
+            testify="A few months have passed and i absolutely have no regrets. My career fast-forwarded in about five years to what i was expecting."
             profile={rafael}
-            country='Brazil'
+            country="Brazil"
           />
 
           <Slider2Card
-            bg='#FCE1E1'
-            name=''
-            testify='We have been working with our Andela teammates since 2018. They are so committed, work incredibly well with our team.'
+            bg="#FCE1E1"
+            name=""
+            testify="We have been working with our Andela teammates since 2018. They are so committed, work incredibly well with our team."
             logo={fluxx}
-            country=''
+            country=""
           />
 
           <Slider2Card
-            bg='#FDF0DC'
-            name=''
+            bg="#FDF0DC"
+            name=""
             testify="We're getting a very large bamg for our buck. The resources i have been on my team are self-starters and are able to take direction and execute."
             logo={attune}
-            country=''
+            country=""
           />
 
           <Slider2Card
-            bg='#B0D6CE'
-            name=''
-            testify='The team has been very transparent when sourcing our needs and if we need to change direction they are able to quickly turn around'
+            bg="#B0D6CE"
+            name=""
+            testify="The team has been very transparent when sourcing our needs and if we need to change direction they are able to quickly turn around"
             logo={gopuff}
-            country=''
+            country=""
           />
 
           <SliderCard
-            bg='#FCE1E1'
-            name='Kaji'
-            testify='One of my biggest concern was timezone and hours overlap. As the collaboration progressed, it was hardly noticeable. Andela resources'
+            bg="#FCE1E1"
+            name="Kaji"
+            testify="One of my biggest concern was timezone and hours overlap. As the collaboration progressed, it was hardly noticeable. Andela resources"
             profile={user}
-            country='Great Britain'
+            country="Great Britain"
           />
 
           <SliderCard
-            bg='#EBE0FF'
-            name='Tony'
-            testify='The Andela team was quick to meet with me as a new team manager to introduce themselves and discuss their roles and responsibilities. We'
+            bg="#EBE0FF"
+            name="Tony"
+            testify="The Andela team was quick to meet with me as a new team manager to introduce themselves and discuss their roles and responsibilities. We"
             profile={user}
-            country='United States'
+            country="United States"
           />
 
           <SliderCard
-            bg='#FDF0DC'
-            name='Makan'
-            testify='Working with Andela is one of the most important and best decision we have made so far as an early stage company. I have worked with'
+            bg="#FDF0DC"
+            name="Makan"
+            testify="Working with Andela is one of the most important and best decision we have made so far as an early stage company. I have worked with"
             profile={user}
-            country='United States'
+            country="United States"
           />
 
           <SliderCard
-            bg='#E0F1EB'
-            name='Matt'
-            testify='A fantastic service providing top quality Technical Support Engineers!'
+            bg="#E0F1EB"
+            name="Matt"
+            testify="A fantastic service providing top quality Technical Support Engineers!"
             profile={user}
-            country='Great Britain'
+            country="Great Britain"
           />
 
           <SliderCard
-            bg='#B0D6CE'
-            name='Florence'
-            testify='Working with Andela team has been great. They know their work and are professional.'
+            bg="#B0D6CE"
+            name="Florence"
+            testify="Working with Andela team has been great. They know their work and are professional."
             profile={user}
-            country='Kenya'
+            country="Kenya"
           />
 
           <SliderCard
-            bg='#FCE1E1'
-            name='Alexander '
-            testify='Good engineers, who have worked with us for years!'
+            bg="#FCE1E1"
+            name="Alexander "
+            testify="Good engineers, who have worked with us for years!"
             profile={user}
-            country='United States'
+            country="United States"
           />
 
           <SliderCard
-            bg='#EBE0FF'
-            name='ML'
+            bg="#EBE0FF"
+            name="ML"
             testify="We started with Andela in a 'staff aug' capacity as a pilot to evaluate the strength of folks they could bring to the table. Our experience to date"
             profile={user}
-            country='United States'
+            country="United States"
           />
 
           <Slider2Card
-            bg='#FDF0DC'
-            name=''
-            testify='Andela is a relatively new partner for us; however, they have quickly become one of our top suppliers and are able to turn-around talent quickly'
+            bg="#FDF0DC"
+            name=""
+            testify="Andela is a relatively new partner for us; however, they have quickly become one of our top suppliers and are able to turn-around talent quickly"
             logo={IBM}
-            country=''
+            country=""
           />
 
           <Slider2Card
-            bg='#FCE1E1'
-            name=''
-            testify='The caliber of their talent, the enthusiasm and commitment of their talent, and the velocity of hiring are truly exceptional.'
+            bg="#FCE1E1"
+            name=""
+            testify="The caliber of their talent, the enthusiasm and commitment of their talent, and the velocity of hiring are truly exceptional."
             logo={nebula}
-            country=''
+            country=""
           />
 
           <SliderCard
-            bg='#FDF0DC'
-            name='Adetola'
+            bg="#FDF0DC"
+            name="Adetola"
             testify="I'm seeing more diverse opportunities at Andela, like Salesforce, DevOps, Different opportunites I'm starting to take advantage of."
             profile={adetola}
-            country='Nigeria'
+            country="Nigeria"
           />
 
           <Slider2Card
-            bg='#B0D6CE'
-            name=''
+            bg="#B0D6CE"
+            name=""
             testify="We love working with Andela. Overall we've had a great experience with the engineering talents who have joined Branch. "
             logo={branch}
-            country=''
+            country=""
           />
 
           <SliderCard
-            bg='#FDF0DC'
-            name='Adeyinka'
-            testify='Andela has helped me to believe, dream big, break barriers, do the impossible.'
+            bg="#FDF0DC"
+            name="Adeyinka"
+            testify="Andela has helped me to believe, dream big, break barriers, do the impossible."
             profile={adeyinka}
-            country='Nigeria'
+            country="Nigeria"
           />
 
           <Slider2Card
-            bg='#FDF0DC'
-            name=''
-            testify='Andela provides excellent service and support, speedy recruitment, and top-notch talent. They identified the perfect match skillset-wise.'
+            bg="#FDF0DC"
+            name=""
+            testify="Andela provides excellent service and support, speedy recruitment, and top-notch talent. They identified the perfect match skillset-wise."
             logo={logitech}
-            country=''
+            country=""
           />
         </Slider>
       </Wrapper>

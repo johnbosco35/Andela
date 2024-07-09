@@ -21,21 +21,23 @@ const Hero = () => {
         </Para>
         <Btn2>
           <Buttons
-            br='50px'
-            bd=''
-            bg='#56C870'
-            wide='200px'
-            length='70px'
-            cc='black'>
+            br="50px"
+            bd=""
+            bg="#56C870"
+            wide="200px"
+            length="70px"
+            cc="black"
+          >
             Hire Talent
           </Buttons>
           <Buttons
-            br='50px'
-            bg='white'
-            bd='1px solid white'
-            length='70px'
-            wide='200px'
-            cc='black'>
+            br="50px"
+            bg="white"
+            bd="1px solid white"
+            length="70px"
+            wide="200px"
+            cc="black"
+          >
             Apply for Jobs
           </Buttons>
         </Btn2>
@@ -232,5 +234,11 @@ const Buttons = styled.button<{
   background-color: ${(props) => props.bg};
   color: ${(props) => props.cc};
   border: ${(props) => props.bd};
-  transition: all 350ms;
+  transition: all 360ms;
+  transform: scale(1);
+
+  :hover {
+    cursor: pointer;
+    transform: scale(0.9);
+  }
 `;

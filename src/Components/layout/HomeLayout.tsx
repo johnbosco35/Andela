@@ -10,9 +10,8 @@ const HomeLayout = () => {
     <div>
       <Header />
       <Outlet />
-      👆👇
       {/*childern for the Body component */}
-      <AndelaFooter />
+      {/* <AndelaFooter /> */}
     </div>
   );
 };
